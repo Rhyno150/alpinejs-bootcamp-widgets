@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Phone Bill Calculator</title>
+    <link rel="stylesheet" href="totalphonebill.css">  </head>
+<body>
+    <h1>Total Phone Bill Calculator</h1>
+    <p>Enter your phone bill items (comma separated):</p>
+    <textarea id="billItems" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="calculateBill()">Calculate Total Bill</button>
+    <p id="totalBill"></p>
+
+    <script src="totalphonebill.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    
+</body>
+</html>

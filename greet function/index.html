@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greetings App</title>
+  <link rel="stylesheet" href="greet.css">
+   
+</head>
+<body>
+  <div x-data="{ name: '', language: 'english', greetCount: 0 }">
+    <h1>Enter your name:</h1>
+    <input type="text" v-model="name" placeholder="Your Name">
+
+    <h2>Choose Language:</h2>
+    <label for="english">English</label>
+    <input type="radio" id="english" name="language" v-model="language" value="english" checked>
+    <label for="spanish">Spanish</label>
+    <input type="radio" id="spanish" name="language" v-model="language" value="spanish">
+    <label for="french">French</label>
+    <input type="radio" id="french" name="language" v-model="language" value="french">
+
+    <button @click="greet">Greet</button>
+    <button @click="resetCount">Reset Counter</button>
+
+    <div id="greetingOutput">{{ getGreeting }}</div>
+    <p id="greetCount">Unique Greetings: {{ greetCount }}</p>
+  </div>
+  <script src="greet.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+  <script src="https://unpkg.com/alpinejs"></script>
+  
+</body>
+</html>
+

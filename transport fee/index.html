@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Fee Calculator</title>
+
+    <link rel="stylesheet" href="transportfee.css">
+</head>
+<body>
+    <h1>Transport Fee Calculator</h1>
+    <p>Enter your shift to calculate your transport fee:</p>
+    <select id="shift">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="nightshift">Night Shift</option>
+    </select>
+    <br>
+    <button onclick="calculateFee()">Calculate Fee</button>
+    <p id="fee"></p>
+
+
+<script src="transportfee.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/alpinejs"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enough Airtime Calculator</title>
+    <link rel="stylesheet" href="enoughairtime.css">
+</head>
+<body>
+    <h1>Enough Airtime Calculator</h1>
+    <p>Enter your phone bill items (comma separated):</p>
+    <textarea id="billItems" rows="4" cols="50" placeholder="Enter SMS, Call, or Data (e.g., sms, call, data)"></textarea>
+    <br>
+    <p>Enter your airtime amount (Rand):</p>
+    <input type="number" step=".01" id="airtimeAmount" placeholder="Enter Airtime Amount">
+    <br>
+    <button onclick="calculateAirtime()">Check Airtime Balance</button>
+    <p id="airtimeResult"></p>
+
+    <script src="enoughairtime.css"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    
+</body>
+</html>
